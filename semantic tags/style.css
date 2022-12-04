@@ -1,0 +1,63 @@
+header {
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+}
+
+main {
+    background-color: green;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+footer {
+    background-color: yellow;
+    height: 50px;
+}
+
+nav {
+    background-color: gray;
+    height: inherit;
+    width: 450px;
+    text-align: right;
+}
+
+aside {
+    background-color: red;
+    height: inherit;
+    width: 200px;
+}
+
+section {
+    background-color: white;
+    height: inherit;
+    width: inherit;
+}
+
+details {
+    border: solid 1px #121212;   
+    border-radius: 0.1em; 
+    background-color: rgba(200, 0, 0, 0.4);
+    margin-bottom: 10px;
+    height: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+details:hover {
+    cursor: pointer;
+}
+
+details[open] {
+   height: 100px;
+   background-color: rgba(200, 0, 0, 0.4);
+
+    transition: all 0.3s ease-in-out;
+}
+
+details[open] .description {
+    margin: 10px 20px;
+}
