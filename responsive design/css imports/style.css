@@ -1,0 +1,16 @@
+@import url(base.css);
+
+.container {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: whitesmoke;
+    max-width: 90%;
+}
+
+.container h3 {
+    font-size: 1.5em;
+}
+
+.container p {
+    font-size: 0.9em;
+}
