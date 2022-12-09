@@ -5,6 +5,7 @@
     padding: 1em;
     background-color: whitesmoke;
     max-width: 90%;
+    min-width: 227px;
 }
 
 .container h3 {
@@ -13,4 +14,27 @@
 
 .container p {
     font-size: 0.9em;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.8em 1.25em;
+    font-size: 1rem;
+    background-color: #ffe600;
+    margin: 0.2em 0.2em;
+    cursor: context-menu;
+    min-width: 8em;
+}
+
+.btn:hover {
+    background-color: deepskyblue;
+}
+
+#actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
