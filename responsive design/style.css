@@ -1,0 +1,57 @@
+body {
+    display: grid;
+}
+.container {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+
+#top .column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#top .image-wrapper {
+    background: url(images/elephant-banner.png);
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+}
+
+#top .title {
+    text-align: center;
+    border: solid 1px red;
+}
+
+#mid .column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#bottom .column-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.col {
+    padding: 0.5em;
+}
+
+/* background colors */
+.bg-color-pink {
+    background-color: pink;
+}
+
+.bg-color-indred {
+    background-color: indianred;
+}
+
+.bg-color-maroon {
+    background-color: maroon;
+}
+
+.text-white {
+    color: rgba(255,255,255,0.70);
+}
