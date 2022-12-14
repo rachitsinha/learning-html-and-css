@@ -1,0 +1,45 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #CBEDD5;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+.banner-img {
+    background-image: url(images/elephant-banner.png);
+    height: 120px;
+    background-position: center 20%;
+}
+
+.row {
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.col {
+    background-color: #97DECE;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 75%;
+}
+
+.col-side {
+    background-color: #62B6B7;
+    color: white;
+    font-size: 1.05em;
+}
