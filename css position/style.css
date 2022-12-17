@@ -9,7 +9,6 @@ body {
 }
 #parent {
     width: 400px;
-    background-color: rgb(0, 150, 250);
 }
 
 #child-one {
@@ -29,4 +28,13 @@ body {
     height: 80px;
     width: 750px;
     background-color: rgb(200, 100, 0);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #4d21f3;
+    text-align: center;
+    color: white;
+    padding-top: 20%;
 }
