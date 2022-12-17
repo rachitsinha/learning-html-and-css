@@ -52,11 +52,11 @@ img {
 h1, h2, h3 {
     font-family: 'Lora', serif;
     color: #143774;
+    margin: 0;
 }
 
 h1 {
     font-size: 2rem;
-    margin: 0;
 }
 
 .widget-title, .article-title {
@@ -135,11 +135,16 @@ main, aside {
     text-align: center;
 }
 
+.widget-recent-post-title {
+    margin-bottom: 0.75em;;
+}
+
 @media (min-width: 600px) {
     .container-flex {
         flex-direction: row;
         justify-content: space-between;
         align-items: unset;
+        padding-top: 1em;
     }
 
     header .container-flex {
@@ -164,6 +169,25 @@ main, aside {
         width: 27%;
         text-align: left;
     }
+
+    .article-recent {
+        display: flex;
+    }
+
+    .article-recent .article-image {
+        height: 250px;
+    }
+
+    .article-recent-main {
+        width: 65%;
+        order: 2;
+        padding: 0 1em;
+    }
+
+    .article-recent-secondary {
+        width: 35%;
+        order: 1;
+    }
 }
 
 @media (min-width: 960px) {
@@ -175,3 +199,25 @@ main, aside {
         margin: 0 0 0 1em;
     }
 }
+/* Scrollbar styling */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #F8F8F8; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #707070; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #143774; 
+  }
