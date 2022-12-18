@@ -1,0 +1,36 @@
+.required::before {
+    content: '*';
+    color: red;
+}
+
+.required::after {
+    content: '(required)';
+    color: red;
+    font-style: italic;
+}
+
+[data-tooltip] {
+    position: relative;
+    width: inherit;
+    border: solid red 1px;
+}
+
+[data-tooltip]::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    background-color: #f0f0f0;
+    min-width: 200px;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    top: 125%;
+    left: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+[data-tooltip]:hover::before {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
